@@ -1,0 +1,903 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>SHS EHR</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/css/material-kit.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<!-- Navbar will come here -->
+	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar">
+									<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+				<a class="navbar-brand" href="#">SHS EHR</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="example-navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="#">Home</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Data
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<!-- <li class="dropdown-header">Dropdown header</li> -->
+							<li><a href="Inpatient.html">Biographical Data</a></li>
+							<li><a href="History.html">History</a></li>
+							<li><a href="#">Travel History</a></li>
+							<!-- <li class="divider"></li> -->
+							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Allergies</a></li>
+							<li><a href="#">Home Medication Info</a></li>
+							<li><a href="#">Consents & Authorities</a></li>
+							<li><a href="EmergencyNotes.html">Emergency Notes</a></li>
+							<li><a href="#">Patient Belongings</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Doctor
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="DoctorNotes.html">Doctor's Notes</a></li>
+							<li><a href="OrderEntry.html">Order Entry</a></li>
+							<li><a href="ClinicalExam.html">Order Results</a></li>
+						</ul>
+					</li>
+					<li class="dropdown active">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nurse
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="NursingNotes.html">Nursing Admission</a></li>
+							<li><a href="#">Nursing Progress Notes</a></li>
+							<li><a href="CarePlan.html">Care Plan</a></li>
+							<li><a href="#">Discharge Planning</a></li>
+							<li><a href="#">Patient Education</a></li>
+							<li><a href="#">Charts</a></li>
+							<li><a href="#">Special Mention</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Charts
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="IOChartInput.html">IO</a></li>
+							<li><a href="BGMchart.html">BGM</a></li>
+							<li><a href="VitalsInput.html">Vitals</a></li>
+							<li><a href="GCSchart.html">GCS</a></li>
+							<li><a href="#">Fluid Schedule</a></li>
+							<li><a href="NeurosensoryAssessmentInput.html">Neurovascular Assessment</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Diagnotics Test
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">XRays</a></li>
+							<li><a href="#">ECG</a></li>
+							<li><a href="#">Lab</a></li>
+						</ul>
+					</li>
+					<li><a href="#">eMAR</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Event Document
+						<b class="caret"></b>
+					</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Incident Report</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Resource</a></li>
+					<li><a href="FlowSheet.html">Flow Sheet</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Summary
+						<b class="caret"></b>
+					</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="IOChart.html">IO Chart</a></li>
+							<li><a href="NeurosensoryAssessment.html">Neurosensory Assessment</a></li>
+							<li><a href="Vitals.html">Vitals</a></li>
+							<li><a href="BGM.html">BGM</a></li>
+							<li><a href="GCS.html">GCS</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+		<p style="font-size:15px;margin-left:16px;">
+			DESMOND TAY | S2345678A | MALE | 50 YEARS OLD | 171CM | 51KG
+		</p>
+	</nav>
+
+	<!-- end navbar -->
+
+	<div class="wrapper">
+
+	</div>
+
+
+
+	<!-- you can use the class main-raised if you want the main area to be as a page with shadows -->
+	<div class="main-raised">
+		<div class="container">
+			<div class="profile">
+				<div class="avatar">
+					<img src="../assets/img/assignment.png" alt="Circle Image" class="img-circle img-responsive img-raised hide1">
+					<!-- <i class="material-icons img-circle img-responsive img-raised">assessment</i> -->
+
+					<h4 style="text-align:center; padding-top:1%;">Home / Nurse / <span class="label label-primary" style="font-size:16px;">Care plan</span></h4>
+				</div>
+
+			</div>
+
+			<div class="profile-tabs">
+				<div class="nav-align-center">
+					<div id="theFixed" style="height:100px;">
+						<a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
+						<ul id="nav-tabs-wrapper" class="nav nav-pills nav-tabs-horizontal" role="tablist">
+							<li class="active">
+								<a href="#Neurosensory" role="tab" data-toggle="tab">Neurosensory</a>
+							</li>
+							<li>
+								<a href="#Respiratory" role="tab" data-toggle="tab">Respiratory</a>
+							</li>
+							<li>
+								<a href="#Nutrition" role="tab" data-toggle="tab">Nutrition</a>
+							</li>
+							<li>
+								<a href="#Elimination" role="tab" data-toggle="tab">Elimination</a>
+							</li>
+							<li>
+								<a href="#Psychological" role="tab" data-toggle="tab">Psychological</a>
+							</li>
+							<li>
+								<a href="#Temperature" role="tab" data-toggle="tab">Temperature</a>
+							</li>
+							<li>
+								<a href="#ChestPain" role="tab" data-toggle="tab">Chest Pain</a>
+							</li>
+							<li>
+								<a href="#HeartFailure" role="tab" data-toggle="tab">Heart Failure</a>
+							</li>
+							<li>
+								<a href="#Arrhythmia" role="tab" data-toggle="tab">Arrhythmia</a>
+							</li>
+							<li>
+								<a href="#Mobilising" role="tab" data-toggle="tab">Mobilising</a>
+							</li>
+							<li>
+								<a href="#WandP" role="tab" data-toggle="tab">Working and Playing</a>
+							</li>
+							<li>
+								<a href="#Pain" role="tab" data-toggle="tab">Pain</a>
+							</li>
+							<li>
+								<a href="#UandW" role="tab" data-toggle="tab">Ulcer and Wound</a>
+							</li>
+							<li>
+								<a href="#Phlebitis" role="tab" data-toggle="tab">Phlebitis</a>
+							</li>
+						</ul>
+					</div>
+					<div style="background-color:white;height:65px;width:100%;">
+
+					</div>
+					<div class="tab-content gallery">
+
+						<div class="tab-pane active" id="Neurosensory">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.	Assess client’s behavior and cognition systematically and continually throughout the day and night as appropriate using CLC assessment</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.	Treat underlying causes of delirium in collaboration with the health care team: Establish/maintain normal fluid and electrolyte balance; establish/maintain normal nutrition, body temperature, oxygenation (if patients experience low oxygen saturation treat with supplemental oxygen), blood glucose levels, blood pressure</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB"> 3.	Perform an accurate mental status exam that includes the following:
+												<br />
+                                            •	Overall appearance, manner, and attitude
+																						<br />
+                                            •	Behavior observations and level of psychomotor behavior
+																						<br />
+                                            •	Mood and affect (presence of suicidal or homicidal ideation as observed by others and reported by client)
+																						<br />
+                                            •	Insight and judgment
+																						<br />
+                                            •	Cognition as evidenced by level of consciousness, orientation (to time, place, and person), thought process and content (perceptual disturbances such as illusions and hallucinations, paranoia, delusions, abstract thinking)
+																						<br />
+																						•	Attention</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.	Treat underlying causes of delirium in collaboration with the health care team</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.	Communicate client status, cognition, and behavioral manifestations to all necessary providers</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.	Lab results should be closely monitored and physiological support provided as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.	Review medication</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.	Offer reassurance to the client and use therapeutic communication at frequent intervals</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Respiratory">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Assess for signs and symptoms of impaired respiratory function</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Perform actions to reduce fear and anxiety</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Instruct client to breathe slowly if hyperventilating</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Place client in a semi- to high Fowler's position unless contraindicated; position cardiac table so patient can lean forward on it if desired</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Instruct client to change position and deep breathe or use incentive spirometer every 1-2 hours</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Promote removal of pulmonary secretions by instructing and assisting patient to cough or "huff" every 1-2 hours</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Remove respiratory secretions by performing oropharyngeal/nasopharyngeal suctioning</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Humidify inspired air as ordered to keep secretions thin</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Maintain oxygen therapy as ordered</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Instruct patient to avoid intake of gas-forming foods (e.g. beans, cauliflower, cabbage, onions), carbonated beverages, and large meals in order to prevent gastric distention and an increase in pressure on the diaphragm</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Discourage smoking</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12.Maintain activity restrictions; increase activity gradually as allowed and tolerated</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13.Consult appropriate health care provider (e.g. physician, respiratory therapist) if signs and symptoms of impaired respiratory function persist or worsen.</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">14.Assist patients with ADLs as needed</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">15.Administer medications as prescribed to decrease effort of breathing</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Nutrition">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Monitor patient's weight</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Set and plan goals with patient</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Collaborate with clinical nutritionist</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Include patient/family caregiver in decisions related to nutrition</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Provide teaching at level of understanding and via preferred learning methods</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Provide pleasant environment during meal time</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Give encouragement of individuals to eat with others</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Assist patient with eating</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Offer to eat small portions but frequently to reduce feelings of tension in the stomach (six times per day with little food)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Allow adequate time for meals</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Encourage patient to take supplement as ordered</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12.Monitor intake and output</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13.Monitor consistency/variety of food</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">14.Monitor calorie intake</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">15.Adjust fluid intake as ordered</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">16.Administer tube feeding</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">17.Encourage/perform oral hygiene as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">18.Report abnormal laboratory values to physician</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Elimination">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.	Conduct a comprehensive assessment and history taking with regards to bladder and bowel pattern</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.	Monitor and document patient’s bowel movements, voiding pattern, diet, intake and output</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.	Observations of changes in mental status:, behavior or level of consciousness</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.	Assess bladder for distension</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.	Monitor laboratory tests: electrolytes, creatinine</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.	Ensure privacy</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.	Perform bladder scan to determine amount of urine in the bladder</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.	Provide easy access to toilet facilities/bedpan/commode/ while ensuring patient safety at the same time</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.	Ensure correct types and adequate bed pans and urinals are available</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10. Perform meatal/perineal care</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11. For incontinent patients, use absorbent incontinent pads to keep moisture away from skin</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12. Assess perineal skin, cleanse perineal to reduce skin irritation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13. Conduct bladder training and encourage pelvic floor exercises</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">14. Encourage increased fluid intake if no fluid restriction</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">15.Adjust fluid intake as ordered</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">16. Avoid food and drinks that irritate GI tract</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">17. Avoid tea and coffee, milk and milk products</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">18. Facilitate normal defecation close to patient’s normal routine</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">19. Maximize patient’s activity level as tolerated to promote peristalsis</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">20. Administer laxatives as prescribed</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">21. Initiate stools chart</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">22. Prevent spread of infection by performing proper handwashing and handling of food</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Psychological">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.	Assess patient's cognitive, behavioural and emotional status</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.	Encourage verbalisation of feelings/concerns/expectations</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.	Provide quiet environment</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.	Assist patient to identify own strengths and abilities</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.	Encourage patient to set small goals for self</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.	Include patient/family caregiver in decisions related to psychosocial needs</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.	Encourage participation in diversional activities</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.	Reinforce positive adaptation of new coping behaviours</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.	Refer to external service</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10. Render supporting counselling</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11. Explain means test criteria</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12. Involve patient/family in explaining and assessing means test criteria and applying relevant financial scheme</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13. Advice on community, financial and transportation resources</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Temperature">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Assess temperature (hourly/4 hourly)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Administer antipyretics per physician's order</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Assess possible etiology of increased temperature</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Remove excess clothing or blankets</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Encourage fluids intake at least 2 litres</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Provide air condition/fan if appropriate</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="ChestPain">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Bed rest (bed rest) with Fowler position / semi-Fowler</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Perform 12 lead ECG</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Observation of vital signs</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Collaboration of oxygen and delivery of analgesic drugs and drug side effects observed</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Install a drip and give peace to the client</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Taking blood samples</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Reduce environmental stimuli.</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Be calm in the works</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Observe signs of complications</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="HeartFailure">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.	Monitor vital signs, capillary refill, skin color, skin moisture, edema, peripheral O2 saturation in the area</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.	Increase bed rest during the acute phase</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Monitor the presence of pulmonary congestion for further intervention.</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Cleaning airway and facilitate the flow of oxygen.</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Lowers oxygen consumption and maximize lung development</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Can be severe hypoxemia during pulmonary edema</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Increasing alveolar oxygen concentration to improve tissue hypoxemia</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Diuretics can reduce congestion and improve the alveolar gas exchange</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Self care needs without affecting the stress myocardial / excessive oxygen demand</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Gradual increase in the activity of the heart and avoid excessive oxygen consumption</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Collaboration to implement a cardiac rehabilitation program</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Arrhythmia">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Monitor for abnormal serum electrolytes, as available</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Monitor for manifestations of electrolyte imbalance</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Maintain patent IV access Administer fluids, as prescribed, if appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Maintain accurate intake and output record</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Maintain intravenous solution containing electrolyte(s) at constant flow rate, as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Administer supplemental electrolytes (e.g., oral, NG, and IV) as prescribed, if appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Consult physician on administration of electrolyte-sparing medications (e.g., spiranolactone), as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Administer electrolyte-binding or -excreting resins (e.g., Kayexalate) as prescribed, if appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Obtain ordered specimens for laboratory analysis of electrolyte levels (e.g., ABG, urine, and serum levels), as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Monitor for loss of electrolyte-rich fluids (e.g., nasogastric suction, ileostomy drainage, diarrhea, wound drainage, and diaphoresis)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Institute measures to control excessive electrolyte loss (e.g., by resting the gut, changing type of diuretic, or administering antipyretics), as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12.Irrigate nasogastric tubes with normal saline</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13.Minimize the amount of ice chips or oral intake consumed by patients with gastric tubes connected to suction</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">14.Provide diet appropriate for patient's electrolyte imbalance (e.g., potassium-rich, low-sodium, and low-carbohydrate foods)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">15.Instruct the patient and/or family on specific dietary modifications, as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">16.Provide a safe environment for the patient with neurological and/or neuromuscular manifestations of electrolyte imbalance</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">17.Promote orientation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">18.Teach patient and family about the type, cause, and treatments for electrolyte imbalance, as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">19.Consult physician if signs and symptoms of fluid and/or electrolyte imbalance persist or worsen</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">20.Monitor patient's response to prescribed electrolyte therapy</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">21.Monitor for side effects of prescribed supplemental electrolytes (e.g., GI irritation)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">22.Monitor closely the serum potassium levels of patients taking digitalis and diuretics</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">23.Place on cardiac monitor, as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">24.Treat cardiac arrhythmias, according to policy</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">25.Prepare patient for dialysis (e.g., assist with catheter placement for dialysis), as appropriate</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Mobilising">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Determine cause of activity intolerance</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Assess client daily for appropriateness of activity and bed rest orders </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Obtain any necessary assistive devices or equipment needed before ambulating client (e.g., walkers, canes, crutches, portable oxygen)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Work with client to set mutual goals that increase activity levels</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.If appropriate, gradually increase activity, allowing client to assist with positioning, transferring, and self-care as possible</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Progress from sitting in bed to dangling, to chair sitting, to standing, to ambulation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Ensure that clients change position slowly. Consider using a chair-bed (stretcher-chair) for clients who cannot get out of bed</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.When getting clients up, observe for symptoms of intolerance such as nausea, pallor, dizziness, visual dimming, and impaired consciousness, as well as changes in vital signs</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Perform range-of-motion exercises if client is unable to tolerate activity</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Refer client to physical therapy to help increase activity levels and strength</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Instruct client to stop activity immediately and report to physician if experiencing the following symptoms: new or worsened intensity or increased frequency of discomfort, tightness, or pressure in chest, back, neck, jaw, shoulders, and/or arms; palpitations; dizziness; weakness; unusual and extreme fatigue; excessive air hunger</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12.Observe and document skin integrity several times a day</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13.Allow for periods of rest before and after planned exertion periods such as meals, baths, treatments, and physical activity</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">14.Provide emotional support and encouragement to client to gradually increase activity</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">15.Encourage independent activity as ability</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="WandP">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.	Observe for causes of ineffective coping such as poor self-concept, grief, lack of problem-solving skills, lack of support, or recent change in life situation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.	Observe for strengths such as the ability to relate the facts and to recognize the source of stressors</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.	Monitor risk of harming self or others and intervene appropriately</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.	Help client set realistic goals and identify personal skills and knowledge</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.	Encourage client to make choices and participate in planning of care and scheduled activities</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.	Provide information regarding care before care is given</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.	Discuss changes with client before making them</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.	Discuss client’s/family’s power to change a situation or the need to accept a situation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.	Avoid false reassurance; give honest answers and provide only the information requested</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Encourage client to describe previous stressors and the coping mechanisms used</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Be supportive of coping behaviors; allow client time to relax</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12.Help clients to define what meaning their symptoms might have for them</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13.Encourage use of cognitive behavioral relaxation (e.g., music therapy, guided imagery)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">14.Use distraction techniques during procedures that cause client to be fearful</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">15.Refer for counseling as needed</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Pain">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Perform a comprehensive assessment of pain to include location, characteristics, onset, duration, frequency, quality, intensity or severity, and precipitating factors of pain</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.	Consider cultural influences on pain response (e.g., cultural beliefs about pain may result in a stoic attitude)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.	Reduce or eliminate factors that precipitate or increase patient’s pain experience (e.g., fear, fatigue, monotony, and lack of knowledge)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.	Teach the use of nonpharmacologic techniques (e.g., relaxation, guided imagery, music therapy, distraction, and massage) before, after, and if possible during painful activities; before pain occurs or increases; and along with other pain relief measures</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.	Provide optimal pain relief with prescribed analgesics</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.	Medicate before an activity to increase participation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.	Evaluate the effectiveness of the pain control measures</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.	Check the medical order for drug, dose, and frequency of analgesic prescribed</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.	Determine analgesic selections (narcotic, nonnarcotic, or NSAID) based on type and severity of pain</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="UandW">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Assess site of skin impairment and determine etiology (e.g., acute or chronic wound, burn, dermatological lesion, pressure ulcer, skin tear)
+Determine that skin impairment involves skin damage only (e.g., partial-thickness wound, stage I or stage II pressure ulcer). Classify superficial pressure ulcers in the following manner:
+•	Stage I: Observable pressure-related alteration of intact skin with indicators as compared with the adjacent or opposite area on the body that may include changes in one or more of the following: skin temperature (warmth or coolness), tissue consistency (firm or boggy feel), and/or sensation (pain, itching). The ulcer appears as a defined area of persistent redness in lightly pigmented skin, whereas in darker skin tones, the ulcer may appear with persistent red, blue, or purple hues (National Pressure Ulcer Advisory Panel, 1999).
+•	Stage II: Partial-thickness skin loss involving epidermis or dermis superficial ulcer that appears as an abrasion, blister, or shallow crater (National Pressure Ulcer Advisory Panel, 1999)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Monitor site of skin impairment at least once a day for color changes, redness, swelling, warmth, pain, or other signs of infection. Determine whether client is experiencing changes in sensation or pain. Pay special attention to high-risk areas such as bony prominences, skinfolds, the sacrum, and heels</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Monitor client's skin care practices, noting type of soap or other cleansing agents used, temperature of water, and frequency of skin cleansing</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Individualize plan according to client's skin condition, needs, and preferences</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Monitor client's continence status, and minimize exposure of skin impairment and other areas to moisture from incontinence, perspiration, or wound drainage</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.If client is incontinent, implement an incontinence management plan to prevent exposure to chemicals in urine and stool that can strip or erode the skin. Refer to an urologist or gastroenterologist for incontinence assessment</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.For clients with limited mobility, use a risk-assessment tool to systematically assess immobility-related risk factors</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Do not position client on site of skin impairment. If consistent with overall client management goals, turn and position client at least every 2 hours. Transfer client with care to protect against the adverse effects of external mechanical forces such as pressure, friction, and shear</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Evaluate for use of specialty mattresses, beds, or devices as appropriate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">10.Implement a written treatment plan for topical treatment of the site of skin impairment. A written plan ensures consistency in care and documentation</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">11.Select a topical treatment that will maintain a moist wound-healing environment and that is balanced with the need to absorb exudate</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">12.Avoid massaging around the site of skin impairment and over bony prominences</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">13.Assess client's nutritional status. Refer for a nutritional consult, and/or institute dietary supplements as necessary</label>
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Phlebitis">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<textarea class="form-control" placeholder="Goals" rows="5"></textarea>
+									<div class="checkbox">
+										<label>Interventions: </label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">1.Assess degree and characteristics of discomfort and pain. Note guarding of extremity. Palpate leg with caution</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">2.Maintain bedrest during acute phase</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">3.Elevate affected extremity</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">4.Provide foot cradle</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">5.Encourage client to change position frequently</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">6.Monitor vital signs, noting elevated temperature</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">7.Investigate reports of sudden or sharp chest pain, accompanied by dyspnea, tachycardia, and apprehension, or development of a new pain with signs of another site of vascular involvement</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">8.Administer medications, as indicated, for example, analgesics (opioid and nonopioid) and antipyretics, such as acetaminophen (Tylenol)</label>
+										<br />
+										<label><input type="checkbox" name="CardiovascularCB">9.Apply moist heat to extremity if indicated</label>
+
+									</div>
+									<textarea class="form-control" placeholder="Other Interventions / Remarks:" rows="5"></textarea>
+									<textarea class="form-control" placeholder="Evaluation:" rows="5"></textarea>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<br />
+			<!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+		</div>
+	</div>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	function toggle_visibility(id) {
+		var e = document.getElementById(id);
+		if (e.style.display == 'block')
+			e.style.display = 'none';
+		else
+			e.style.display = 'block';
+	}
+</script>
+
+<!--   Core JS Files   -->
+<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/material.min.js"></script>
+
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="../assets/js/nouislider.min.js" type="text/javascript"></script>
+
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="../assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="../assets/js/material-kit.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$().ready(function() {
+		// the body of this function is in assets/material-kit.js
+		materialKit.initSliders();
+		window_width = $(window).width();
+
+		if (window_width >= 992) {
+			big_image = $('.wrapper > .header');
+
+			$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+		}
+
+	});
+
+	$('.nav-tabs-dropdown').each(function(i, elm) {
+
+		$(elm).text($(elm).next('ul').find('li.active a').text());
+
+	});
+
+	$('.nav-tabs-dropdown').on('click', function(e) {
+
+		e.preventDefault();
+
+		$(e.target).toggleClass('open').next('ul').slideToggle();
+
+	});
+
+	$('#nav-tabs-wrapper a[data-toggle="tab"]').on('click', function(e) {
+
+		e.preventDefault();
+
+		$(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());
+
+	});
+
+	$(window).scroll(function() {
+		$("#theFixed").css("top", Math.max(105, 315 - $(this).scrollTop()));
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() < 825) {
+			$(window).scroll(function() {
+				$("#theFixed").css("top", Math.max(100, 175 - $(this).scrollTop()));
+			});
+		} else {
+			$(window).scroll(function() {
+				$("#theFixed").css("top", Math.max(105, 315 - $(this).scrollTop()));
+			});
+		}
+	});
+</script>
+
+</html>

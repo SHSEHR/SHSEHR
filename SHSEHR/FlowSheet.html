@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<title>SHS EHR</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="../assets/css/material-kit.css" rel="stylesheet" />
+</head>
+
+<body>
+
+	<!-- Navbar will come here -->
+	<nav class="navbar navbar-transparent navbar-fixed-top navbar-color-on-scroll">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar">
+									<span class="sr-only">Toggle navigation</span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+										<span class="icon-bar"></span>
+								</button>
+				<a class="navbar-brand" href="#">SHS EHR</a>
+			</div>
+
+			<div class="collapse navbar-collapse" id="example-navbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class=""><a href="#">Home</a></li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Data
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<!-- <li class="dropdown-header">Dropdown header</li> -->
+							<li><a href="Inpatient.html">Biographical Data</a></li>
+							<li><a href="History.html">History</a></li>
+							<li><a href="#">Travel History</a></li>
+							<!-- <li class="divider"></li> -->
+							<li><a href="#">Contacts</a></li>
+							<li><a href="#">Allergies</a></li>
+							<li><a href="#">Home Medication Info</a></li>
+							<li><a href="#">Consents & Authorities</a></li>
+							<li><a href="EmergencyNotes.html">Emergency Notes</a></li>
+							<li><a href="#">Patient Belongings</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Doctor
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="DoctorNotes.html">Doctor's Notes</a></li>
+							<li><a href="OrderEntry.html">Order Entry</a></li>
+							<li><a href="ClinicalExam.html">Order Results</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Nurse
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="NursingNotes.html">Nursing Admission</a></li>
+							<li><a href="#">Nursing Progress Notes</a></li>
+							<li><a href="CarePlan.html">Care Plan</a></li>
+							<li><a href="#">Discharge Planning</a></li>
+							<li><a href="#">Patient Education</a></li>
+							<li><a href="#">Charts</a></li>
+							<li><a href="#">Special Mention</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Charts
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="IOChartInput.html">IO</a></li>
+							<li><a href="BGMchart.html">BGM</a></li>
+							<li><a href="VitalsInput.html">Vitals</a></li>
+							<li><a href="GCSchart.html">GCS</a></li>
+							<li><a href="#">Fluid Schedule</a></li>
+							<li><a href="NeurosensoryAssessmentInput.html">Neurovascular Assessment</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Diagnotics Test
+				<b class="caret"></b>
+			</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">XRays</a></li>
+							<li><a href="#">ECG</a></li>
+							<li><a href="#">Lab</a></li>
+						</ul>
+					</li>
+					<li><a href="#">eMAR</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Event Document
+						<b class="caret"></b>
+					</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="#">Incident Report</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Resource</a></li>
+					<li class="active"><a href="FlowSheet.html">Flow Sheet</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Summary
+						<b class="caret"></b>
+					</a>
+						<ul class="dropdown-menu dropdown-menu-right">
+							<li><a href="IOChart.html">IO Chart</a></li>
+							<li><a href="NeurosensoryAssessment.html">Neurosensory Assessment</a></li>
+							<li><a href="Vitals.html">Vitals</a></li>
+							<li><a href="BGM.html">BGM</a></li>
+							<li><a href="GCS.html">GCS</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<p style="font-size:15px; margin-left:16px;">
+			DESMOND TAY | S2345678A | MALE | 50 YEARS OLD | 171CM | 51KG
+		</p>
+	</nav>
+
+	<!-- end navbar -->
+
+	<div class="wrapper">
+
+	</div>
+
+	<!-- you can use the class main-raised if you want the main area to be as a page with shadows -->
+	<div class="main-raised">
+		<div class="container">
+			<div class="profile">
+				<div class="avatar">
+					<img src="../assets/img/assignment.png" alt="Circle Image" class="img-circle img-responsive img-raised hide1">
+					<!-- <i class="material-icons img-circle img-responsive img-raised">assessment</i> -->
+					<h4 style="text-align:center;padding-top:1%;">Home / <span class="label label-primary" style="font-size:16px;">Flow Sheet</span></h4>
+				</div>
+
+			</div>
+
+			<div class="profile-tabs">
+				<div class="nav-align-center">
+					<div id="theFixed" style="height:100px;">
+					<a href="#" class="nav-tabs-dropdown btn btn-block btn-primary">Tabs</a>
+					<ul id="nav-tabs-wrapper" class="nav nav-pills nav-tabs-horizontal" role="tablist">
+						<li class="active">
+							<a href="#Neurosensory" role="tab" data-toggle="tab">Neurosensory</a>
+						</li>
+						<li>
+							<a href="#Cardiovascular" role="tab" data-toggle="tab">Cardiovascular</a>
+						</li>
+						<li>
+							<a href="#Pain" role="tab" data-toggle="tab">Pain</a>
+						</li>
+						<li>
+							<a href="#FallRisk" role="tab" data-toggle="tab">Fall Risk</a>
+						</li>
+						<li>
+							<a href="#Bowel" role="tab" data-toggle="tab">Bowel</a>
+						</li>
+						<li>
+							<a href="#Temperature" role="tab" data-toggle="tab">Temperature</a>
+						</li>
+						<li>
+							<a href="#Respiratory" role="tab" data-toggle="tab">Respiratory</a>
+						</li>
+						<li>
+							<a href="#FunctionalStatus" role="tab" data-toggle="tab">Functional Status</a>
+						</li>
+						<li>
+							<a href="#Nutrition" role="tab" data-toggle="tab">Nutrition</a>
+						</li>
+						<li>
+							<a href="#Micturition" role="tab" data-toggle="tab">Micturition</a>
+						</li>
+						<li>
+							<a href="#ISD" role="tab" data-toggle="tab">Instravascular/Subcutaneous Devices</a>
+						</li>
+						<li>
+							<a href="#PsychoStatus" role="tab" data-toggle="tab">Psycho Status</a>
+						</li>
+						<li>
+							<a href="#Skin" role="tab" data-toggle="tab">Skin</a>
+						</li>
+					</ul>
+</div>
+<div style="background-color:white;height:110px;width:100%;">
+
+</div>
+					<div class="tab-content gallery">
+
+						<div class="tab-pane active" id="Neurosensory">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<!-- <label style="color:black; font-weight:bold;">General Conditions</label> -->
+									<div class="checkbox">
+										<label>Neurosensory: </label>
+										<label><input type="checkbox" name="NeurosensoryCB">Alert</label>
+										<label><input type="checkbox" name="NeurosensoryCB">Confused</label>
+										<label><input type="checkbox" name="NeurosensoryCB">Drowsy</label>
+										<label><input type="checkbox" name="NeurosensoryCB">Unresponsive</label>
+										<label><input type="checkbox" name="NeurosensoryCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Monitor CLC, State Frequency" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Cardiovascular">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Cardiovascular: </label>
+										<label><input type="checkbox" name="CardiovascularCB">Haemodynamic Stable</label>
+										<label><input type="checkbox" name="CardiovascularCB">Chest Pain</label>
+										<label><input type="checkbox" name="CardiovascularCB">Bleeding</label>
+										<label><input type="checkbox" name="CardiovascularCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Monitor Vital Signs, State Frequency" class="form-control" />
+									</div>
+
+									<hr style="height:3px;border:none;color:#AAAAAA;background-color:#AAAAAA;" />
+
+									<label style="color:black; font-weight:bold;">Interventions for Cardiovascular</label>
+
+									<div class="checkbox">
+										<label><input type="checkbox" name="IFCCB">1. Monitor vital signs, capillary refill, skin color, skin moisture, edema, peripheral O2 saturation in the area.</label>
+										<br />
+										<label><input type="checkbox" name="IFCCB">2. Increase bed rest during the acute phase.</label>
+										<br />
+										<label><input type="checkbox" name="IFCCB">3. Monitor the presence of pulmonary congestion for further intervention.</label>
+										<br />
+										<label><input type="checkbox" name="IFCCB">4. Cleaning airway and facilitate the flow of oxygen.</label>
+										<br />
+										<label><input type="checkbox" name="IFCCB">5. Lowers oxygen consumption and maximize lung development.</label>
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Pain">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Pain: </label>
+										<label><input type="checkbox" name="PainCB">Absent</label>
+										<label><input type="checkbox" name="PainCB">Not in obvious distress</label>
+										<label><input type="checkbox" name="PainCB">Present</label>
+										<label><input type="checkbox" name="PainCB">Evidence of D</label>
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Site" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Pain Score" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Initiate pain management guidelines" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="FallRisk">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Fall Risk: </label>
+										<label><input type="checkbox" name="FallRiskCB">High Risk</label>
+										<label><input type="checkbox" name="FallRiskCB">Moderate Risk</label>
+										<label><input type="checkbox" name="FallRiskCB">Low Risk</label>
+
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Implement fall prevention measurers" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Review using Morse Fall Scale" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Bowel">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Bowel: </label>
+										<label><input type="checkbox" name="BowelCB">BO</label>
+										<label><input type="checkbox" name="BowelCB">BNO</label>
+										<label><input type="checkbox" name="BowelCB">Diarrhoea</label>
+										<label><input type="checkbox" name="BowelCB">Constipation</label>
+										<label><input type="checkbox" name="BowelCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Temperature">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Temperature: </label>
+										<label><input type="checkbox" name="TemperatureCB">Afebrile</label>
+										<label><input type="checkbox" name="TemperatureCB">Febrile</label>
+										<label><input type="checkbox" name="TemperatureCB">Hypotherma</label>
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Check temperature post intervention" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Apply cold compress/Tepid sponging" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Respiratory">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Respiratory: </label>
+										<label><input type="checkbox" name="RespiratoryCB">Easy</label>
+										<label><input type="checkbox" name="RespiratoryCB">Dyspnoea</label>
+										<label><input type="checkbox" name="RespiratoryCB">Risk</label>
+										<label><input type="checkbox" name="RespiratoryCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Prop up in bed" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Monitor oxygen saturation" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Suction from" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Implement chest tube care" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="FunctionalStatus">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Functional Status: </label>
+										<label><input type="checkbox" name="FunctionalStatusCB">Independent</label>
+										<label><input type="checkbox" name="FunctionalStatusCB">Dependent</label>
+										<label><input type="checkbox" name="FunctionalStatusCB">Assisted</label>
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Assist in activities of living (Including oral toilet if applicable)" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Inform doctor if there is functional decline" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Review discharge planning if there is function decline" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Initiate neurovascular chart" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Nutrition">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="radio">
+										<label class="rd_label">Nutrition: </label>
+										<label><input type="radio" name="NRB">NBM</label>
+										<label><input type="radio" name="NRB">Adequate</label>
+										<label><input type="radio" name="NRB">Probably Inadequate</label>
+										<label><input type="radio" name="NRB">Poor</label>
+										<label><input type="radio" name="NRB">Oral</label>
+										<label><input type="radio" name="NRB">NG Tube</label>
+										<label><input type="radio" name="NRB">NJ Tube</label>
+										<label><input type="radio" name="NRB">PEG Tube</label>
+									</div>
+									<div class="radio">
+										<label class="rd_label">NG Suction: </label>
+										<label><input type="radio" name="NGSRB">Intermittent</label>
+										<label><input type="radio" name="NGSRB">Passive</label>
+										<label><input type="radio" name="NGSRB">Manual</label>
+									</div>
+									<div class="radio">
+										<label class="rd_label">Assess Abdomen: </label>
+										<label><input type="radio" name="AARB">Distended</label>
+										<label><input type="radio" name="AARB">Soft</label>
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Presence of nausea/vomiting" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Fluid restriction" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Diet Restriction" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Review intake/output chart daily (Consult DR)" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Micturition">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Micturition: </label>
+										<label><input type="checkbox" name="MicturitionCB">PU</label>
+										<label><input type="checkbox" name="MicturitionCB">NPU</label>
+										<label><input type="checkbox" name="MicturitionCB">Risk</label>
+										<label><input type="checkbox" name="MicturitionCB">Pre-Urethral</label>
+										<label><input type="checkbox" name="MicturitionCB">Indwelling Catheher</label>
+										<label><input type="checkbox" name="MicturitionCB">Uroshealth</label>
+										<label><input type="checkbox" name="MicturitionCB">Diapers</label>
+										<label><input type="checkbox" name="MicturitionCB">PCN</label>
+										<label><input type="checkbox" name="MicturitionCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="checkbox">
+										<label>Nature of urine output: </label>
+										<label><input type="checkbox" name="NOUOCB">Clear</label>
+										<label><input type="checkbox" name="NOUOCB">Hamaturai</label>
+										<label><input type="checkbox" name="NOUOCB">Others</label>
+										<label><input type="checkbox" name="NOUOCB">Unable to access</label>
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Bladder" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Presence of urinary incontinence" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="ISD">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Intravascular/Subcutaneous devices: </label>
+										<label><input type="checkbox" name="ISDCB">N.A</label>
+										<label><input type="checkbox" name="ISDCB">In-Situ</label>
+									</div>
+									<div class="checkbox">
+										<label>Peripheral: </label>
+										<label><input type="checkbox" name="PCB">Peripheral</label>
+										<label><input type="checkbox" name="PCB">PICC</label>
+										<label><input type="checkbox" name="PCB">Central Line</label>
+										<label><input type="checkbox" name="PCB">IA</label>
+										<label><input type="checkbox" name="PCB">SC</label>
+										<label><input type="checkbox" name="PCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Presence of phlebitis (Current/previous site)" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Phlebitis Score" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Implement care plan on prevention of phlebitis" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Initiate/follow up care plan on management of phlebitis" class="form-control" />
+									</div>
+									<hr style="height:3px;border:none;color:#AAAAAA;background-color:#AAAAAA;" />
+									<label style="color:black; font-weight:bold;">Nursing interventions for phlebitis</label>
+									<div class="checkbox">
+										<label><input type="checkbox" name="NIFPCB">1. Assess degree and characteristics of discomfort and pain. Note guarding of extremity. Palpate leg with caution.</label>
+										<br />
+										<label><input type="checkbox" name="NIFPCB">2. Maintain bed rest during acute phase.</label>
+										<br />
+										<label><input type="checkbox" name="NIFPCB">3. Elevate affected extremity.</label>
+										<br />
+										<label><input type="checkbox" name="NIFPCB">4. Provide foot cradle.</label>
+										<br />
+										<label><input type="checkbox" name="NIFPCB">5. Encourage client to change position frequently.</label>
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="PsychoStatus">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Psycho Status: </label>
+										<label><input type="checkbox" name="PSCB">Stable</label>
+										<label><input type="checkbox" name="PSCB">Anxious</label>
+										<label><input type="checkbox" name="PSCB">Depressed</label>
+										<label><input type="checkbox" name="PSCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Identity information deficits" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Provide reassurance and counselling" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Initiate suicidal precaution chart" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+						<div class="tab-pane text-center" id="Skin">
+							<div class="row">
+								<form style="width:100%; margin:0 auto; text-align:left;">
+									<div class="checkbox">
+										<label>Skin: </label>
+										<label><input type="checkbox" name="SCB">Skin</label>
+										<label><input type="checkbox" name="SCB">Dry</label>
+										<label><input type="checkbox" name="SCB">Moist Wound</label>
+										<label><input type="checkbox" name="SCB">Others</label>
+										<input type="text" value="" placeholder="Others, Specify" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Assess for risk of pressure ulcer" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Implement pressure ulcer care bundle" class="form-control" />
+									</div>
+									<div class="radio">
+										<label class="rd_label">Pressure Score: </label>
+										<label><input type="radio" name="PSRB">Stage 1</label>
+										<label><input type="radio" name="PSRB">Stage 2</label>
+										<label><input type="radio" name="PSRB">Stage 3</label>
+										<label><input type="radio" name="PSRB">Stage 4</label>
+										<label><input type="radio" name="PSRB">Unstageble</label>
+									</div>
+									<div class="radio">
+										<label class="rd_label">Wound Chart: </label>
+										<label><input type="radio" name="WCRB">Initiated</label>
+										<label><input type="radio" name="WCRB">Updated</label>
+									</div>
+									<div class="radio">
+										<label class="rd_label">Wound Dressing: </label>
+										<label><input type="radio" name="WDRB">Intact</label>
+										<label><input type="radio" name="WDRB">Changed</label>
+										<label><input type="radio" name="WDRB">Wound Exposed</label>
+									</div>
+									<div class="radio">
+										<label class="rd_label">Apply: </label>
+										<label><input type="radio" name="ARB">Moisturising Cream</label>
+										<label><input type="radio" name="ARB">Barrier Cream</label>
+										<label><input type="radio" name="ARB">Therapeutic Spray</label>
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Care of drainage systems" class="form-control" />
+									</div>
+									<div class="form-group">
+										<input type="text" value="" placeholder="Care of dialysis access site" class="form-control" />
+									</div>
+									<button class="btn btn-primary" style="float:right;">Add New</button>
+								</form>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<br />
+			<!-- <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /> -->
+		</div>
+	</div>
+	</div>
+
+
+</body>
+
+<script type="text/javascript">
+	function toggle_visibility(id) {
+		var e = document.getElementById(id);
+		if (e.style.display == 'block')
+			e.style.display = 'none';
+		else
+			e.style.display = 'block';
+	}
+</script>
+
+<!--   Core JS Files   -->
+<script src="../assets/js/jquery.min.js" type="text/javascript"></script>
+<script src="../assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../assets/js/material.min.js"></script>
+
+<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+<script src="../assets/js/nouislider.min.js" type="text/javascript"></script>
+
+<!--  Plugin for the Datepicker, full documentation here: http://www.eyecon.ro/bootstrap-datepicker/ -->
+<script src="../assets/js/bootstrap-datepicker.js" type="text/javascript"></script>
+
+<!-- Control Center for Material Kit: activating the ripples, parallax effects, scripts from the example pages etc -->
+<script src="../assets/js/material-kit.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+	$().ready(function() {
+		// the body of this function is in assets/material-kit.js
+		materialKit.initSliders();
+		window_width = $(window).width();
+
+		if (window_width >= 992) {
+			big_image = $('.wrapper > .header');
+
+			$(window).on('scroll', materialKitDemo.checkScrollForParallax);
+		}
+
+	});
+
+	$('.nav-tabs-dropdown').each(function(i, elm) {
+
+		$(elm).text($(elm).next('ul').find('li.active a').text());
+
+	});
+
+	$('.nav-tabs-dropdown').on('click', function(e) {
+
+		e.preventDefault();
+
+		$(e.target).toggleClass('open').next('ul').slideToggle();
+
+	});
+
+	$('#nav-tabs-wrapper a[data-toggle="tab"]').on('click', function(e) {
+
+		e.preventDefault();
+
+		$(e.target).closest('ul').hide().prev('a').removeClass('open').text($(this).text());
+
+	});
+
+	$(window).scroll(function() {
+		$("#theFixed").css("top", Math.max(105, 315 - $(this).scrollTop()));
+	});
+
+	$(window).resize(function() {
+		if ($(window).width() < 825) {
+			$(window).scroll(function() {
+				$("#theFixed").css("top", Math.max(100, 175 - $(this).scrollTop()));
+			});
+		} else {
+			$(window).scroll(function() {
+				$("#theFixed").css("top", Math.max(105, 315 - $(this).scrollTop()));
+			});
+		}
+	});
+</script>
+
+</html>
